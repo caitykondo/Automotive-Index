@@ -1,4 +1,23 @@
-CREATE INDEX make_code ON car_models (make_code);
+-- DROP DATABASE "indexed_cars";
+-- CREATE USER "indexed_cars_user" WITH ENCRYPTED PASSWORD 'passw0rd';
+-- CREATE DATABASE "indexed_cars" WITH OWNER "indexed_cars_user";
+
+-- to connect with login credentials: psql -U indexed_cars_user -W indexed_cars
+
+-- \i scripts/car_models.sql;
+
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+
+-- \timing;
 
 
 SELECT DISTINCT make_title FROM car_models WHERE make_code = 'LAM'; -- 2.495 ms
